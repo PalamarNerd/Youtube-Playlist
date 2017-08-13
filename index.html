@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>YPlaylist - Youtube Playlist com jQuery</title>
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <h1>Playlist do Youtube</h1>
+        <div id="container"></div>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib.min.js"></script>
+        <script type="text/javascript">
+            YPlaylist.init({
+                playlist: '<Coloque aqui o ID da Playlist>',
+                apiKey: '<Coloque aqui a sua APIKey>',
+                container: $('#container'),
+                shuffle: false
+            });
+        </script>
+    </body>
+</html>
