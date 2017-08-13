@@ -1,6 +1,6 @@
 # Youtube Playlist com jQuery
 
-Cole diretamente antes fa tag </body>
+Cole diretamente antes na tag ```</body>```
 ```html
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/lib.min.js"></script>
