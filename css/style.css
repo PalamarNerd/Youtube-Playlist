@@ -1,0 +1,301 @@
+/*body */
+body {
+	font-size: 125%;
+	background: url('../imagens/background.png');
+	font-family: 'Indie Flower', cursive;
+}
+
+img,
+picture,
+video,
+embed {
+   max-width: 100%;
+}
+
+   @media screen and (max-width: 1024px) {
+   /*style*/
+}
+
+.container {
+   max-width: 1128px;
+   margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+   content: " ";
+   display: table;
+}
+
+.clearfix:after {
+   clear: both;
+}
+
+.clearfix {
+   *zoom: 1;
+}
+
+*, *:before, *:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+   width: 100%;
+   height: 48px;
+   margin-top: 3.6em;
+   margin-bottom: 3.6em;
+}
+
+.logo {
+   width: 20.744680851064%; /*234px / 1128px */
+   float: left;
+}
+
+.menu {
+   width: 74.468085106383%; /*840px / 1128px */
+   float: right;
+}
+
+/* banner */
+
+.banner {
+   background: url('../img/banner.jpg');
+   height: 450px;
+   margin-bottom: 4.8em;
+   position: relative;
+}
+
+.caixa {
+   width: 42.553191489362%; /* 264px / 1128px */
+   padding: 2.4em 4em 2.4em 4em;
+   position: absolute;
+   top: 48px;
+   background: rgba(0,0,0,0.6);
+}
+
+.coluna {
+   width: 23.404255319149%; /* 264px / 1128px */
+   margin-right: 2.127659574468%; /* 24 / 1128px */
+float: left;
+}
+
+.coluna:last-child {
+   margin-right: 0;
+}
+
+/* footer */
+
+.footer {
+   font-size: 70;
+   width: 100%;
+   margin-top: 2.4em;
+   margin-bottom: 2.4em;
+   float: left;
+   clear: both;
+}
+
+/* video principal */
+
+.placeholder {
+	background: url("img/pattern.png") repeat;
+	min-height: 400px;
+	margin-bottom: 60px;
+	padding: 11px 0;
+	position: relative
+}
+.placeholder:after {
+	bottom: -30px;
+	content: "";
+	background: url("img/placeholder-shadow.png") no-repeat;
+	height: 30px;
+	left: 50%;
+	margin-left: -510px;
+	position: absolute;
+	width: 1020px
+}
+.placeholder iframe {
+	display:block;
+	height: 380px;
+	margin: 0 auto 8px;
+	width: 820px
+}
+.placeholder h2 {
+	color: #fdbb16;
+	font: 1.6em 'OratorpraOi-TextTwo';
+	text-align: center
+}
+
+/* Carousel */
+
+.carousel-container {
+	margin: 0 auto;
+	position: relative;
+	width: 732px
+}
+
+.carousel-container .controll {
+	cursor: pointer;
+	height: 54px;
+	position: absolute;
+	top: 40px;
+	width: 29px;
+	z-index: 5
+}
+
+.carousel-container .prev {
+	background: url("img/bt-prev.png") no-repeat;
+	left: -40px
+}
+
+.carousel-container .next {
+	background: url("img/bt-next.png") no-repeat;
+	right: -40px
+}
+
+.carousel-inner {
+	float: left; 
+	width: 732px; 
+	overflow: hidden;  
+}
+
+.slider {
+	position: relative;
+	left: -244px; 
+	width: 9999px; 
+}
+
+.slider li {
+    float: left;
+    height: 300px;
+    margin-right: 1px;
+    width: 243px
+}
+
+.slider li a {
+    display: block;
+    height: 156px
+}
+
+.slider li img {
+    display: block;
+    height: 136px;
+    width: 243px
+}
+
+.slider li .shadow {
+    background: url("img/shadow-carousel.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 20px;
+    width: 243px
+}
+
+.slider li h2 {
+    font: 1.6em 'OratorpraOi-TextTwo';
+    letter-spacing: -0.05em;
+    margin-bottom: 8px;
+    min-height: 40px
+}
+
+.slider li.current .spacer {
+    background-color: #FDBB16
+}
+
+.slider li .spacer {
+    background-color: #000000;
+    display: block;
+    height: 9px;
+    margin-bottom: 8px
+}
+
+.slider li:hover .spacer {
+	background-color: #fdbb16
+}
+
+.slider li p {
+    color: #A3A3A3;
+    font-size: 1.2em;
+    line-height: 17px;
+    margin: 0 auto;
+    text-align: center;
+    width: 190px
+}
+
+/* mobile */
+
+@media screen and (max-width: 1128px) {
+.container {
+   padding: 0 2.4em 0 2.4em;
+}
+}
+
+@media screen and (max-width: 768px) {
+.caixa {
+   width: 65%;
+}
+}
+
+.coluna {
+   width: 48%;
+   margin-bottom: 2.4em;
+   margin-right: 2%;
+}
+
+.coluna:nth-child(even) {
+   margin-right: 0;
+}
+
+.logo {
+   margin-top: 1.2em;
+}
+
+@media screen and (max-width: 718px) {
+.banner {
+   position: relative;
+   float: left;
+   margin:0;
+   height: 150px;
+}
+
+.caixa {
+   position: relative;
+   display: block;
+   float: left;
+   margin-top:100px;
+   width: 100%;
+   background: #000;
+}
+
+.caixa h1 {
+   font-size: 2.5em;
+}
+
+.principal {
+   margin-top: 450px;
+}
+}
+
+@media screen and (max-width: 640px) {
+.menu {
+   width: 100%;
+}
+
+.menu ul {
+   float: left;
+   font-size: 0.8em;
+}
+
+.menu li:first-child {
+   margin-left: 0;
+}
+}
+
+@media screen and (max-width: 520px) {
+.coluna {
+   width: 100%;
+   margin-right: 0;
+}
+}
